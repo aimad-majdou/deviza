@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Confidentialité</title>
+<meta name="robots" content="index,follow">
+<style>
+:root{--bg:#fbfaf8;--fg:#1c1b19;--muted:#6b6862;--rule:#e2ded7;--accent:#8a5a2b;--code:#f2efe9}
+:root:not([data-theme="light"]) {}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171614;--fg:#e8e5e0;--muted:#a09c95;--rule:#302e2a;--accent:#d9a066;--code:#232120}}
+:root[data-theme="dark"]{--bg:#171614;--fg:#e8e5e0;--muted:#a09c95;--rule:#302e2a;--accent:#d9a066;--code:#232120}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  font-size:17px;line-height:1.65;-webkit-text-size-adjust:100%}
+.wrap{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+nav{display:flex;gap:1.25rem;align-items:baseline;flex-wrap:wrap;
+  padding-bottom:1.25rem;margin-bottom:2.5rem;border-bottom:1px solid var(--rule)}
+nav .brand{font-weight:700;letter-spacing:.02em;margin-right:auto}
+nav a{color:var(--muted);text-decoration:none;font-size:.9rem;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+nav a:hover,nav a[aria-current]{color:var(--accent)}
+h1{font-size:1.9rem;line-height:1.25;margin:0 0 .5rem}
+h2{font-size:1.3rem;margin:2.5rem 0 .75rem;padding-top:.5rem;border-top:1px solid var(--rule)}
+h3{font-size:1.08rem;margin:1.75rem 0 .5rem}
+h4{font-size:.98rem;margin:1.25rem 0 .4rem;color:var(--muted)}
+p,ul{margin:0 0 1rem}
+ul{padding-left:1.25rem}
+li{margin-bottom:.4rem}
+a{color:var(--accent)}
+strong{font-weight:700}
+hr{border:0;border-top:1px solid var(--rule);margin:2rem 0}
+blockquote{margin:1.25rem 0;padding:.75rem 1rem;border-left:3px solid var(--accent);
+  background:var(--code);color:var(--muted);font-size:.95rem}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;
+  background:var(--code);padding:.12em .35em;border-radius:3px}
+.table-wrap{overflow-x:auto;margin:0 0 1.25rem}
+table{border-collapse:collapse;width:100%;font-size:.92rem;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+th,td{text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);
+  color:var(--muted);font-size:.85rem;font-family:system-ui,-apple-system,sans-serif}
+@media(max-width:480px){body{font-size:16px}.wrap{padding:1.75rem 1rem 4rem}h1{font-size:1.55rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <span class="brand">Documents légaux</span>
+  <a href="./privacy.html" aria-current="page">Confidentialité</a>
+  <a href="./terms.html">Conditions d'utilisation</a>
+</nav>
+<h1>Privacy Policy</h1>
+<p><strong>Last updated:</strong> 26 August 2026</p>
+<p>The Service generates quotes, invoices, delivery notes and purchase orders for small businesses from messages sent over WhatsApp. This policy describes what we hold, why, and for how long.</p>
+<p><strong>Data controller:</strong> Aimad MAJDOU <strong>Contact:</strong> devisbot.ma@gmail.com</p>
+<hr>
+<h2>What we collect</h2>
+<h3>From you, when you set up your profile</h3>
+<ul><li>Your company name, address and city</li><li>Your <strong>ICE</strong>, <strong>IF</strong> and <strong>RC</strong> numbers — Moroccan tax and registration identifiers, required by Article 145 of the CGI to appear on a valid invoice</li><li>Your logo and stamp images, if you send them</li><li>Your WhatsApp phone number</li></ul>
+<h3>From your messages</h3>
+<ul><li>The text of messages you send us, so line items can be extracted from them</li><li>The documents produced: line descriptions, quantities, prices and totals</li><li>Where a message names your customer, that customer's <strong>name, and their ICE, address and city when given</strong> — a B2B invoice is not legally valid without identifying the purchaser</li><li>Images you send as proof of payment</li></ul>
+<h3>Automatically</h3>
+<ul><li>When each message and document was created</li><li>Which documents were generated, and how many, for your usage limits</li></ul>
+<p>We do <strong>not</strong> collect your WhatsApp contacts, your location, or any message not sent to our number.</p>
+<hr>
+<h2>Why we hold it</h2>
+<div class="table-wrap"><table><thead><tr><th>Purpose</th><th>What it uses</th></tr></thead><tbody><tr><td>Producing your documents</td><td>Profile, messages, line items, customer details</td></tr><tr><td>Meeting Moroccan invoicing law</td><td>Both parties' identifiers, VAT breakdown, line items</td></tr><tr><td>Managing your subscription</td><td>Phone number, payment proof, usage counts</td></tr><tr><td>Support</td><td>Messages you send with the <code>bug</code> command</td></tr></tbody></table></div>
+<h2>Automated processing</h2>
+<p>Message text is sent to <strong>Google Gemini</strong> to extract line items. That processing produces the contents of your document. It is not used to make decisions about you, and we do not use it for profiling or advertising.</p>
+<h2>Who else sees it</h2>
+<ul><li><strong>Meta (WhatsApp)</strong> — delivers the messages, and is subject to its own terms</li><li><strong>Google (Gemini)</strong> — receives message text for extraction, as above</li><li><strong>Our hosting provider</strong> — stores the database</li></ul>
+<p>We do not sell your data, and we do not share it for advertising.</p>
+<p>Data is stored on servers in the <strong>European Union</strong>. Under Article 43 of Law 09-08 this is a transfer abroad, and it is declared to the <strong>CNDP</strong> as such. Morocco does not maintain a list of countries with recognised adequate protection, so this rests on the safeguards the destination applies rather than on any automatic adequacy — EU providers are subject to the GDPR, which exceeds the protection Law 09-08 requires.</p>
+<p>We do not store data in the United States.</p>
+<h2>How long we keep it</h2>
+<ul><li><strong>Invoices and their records: 10 years.</strong> Moroccan law requires this, and we cannot delete them earlier even at your request.</li><li>Quotes, delivery notes and purchase orders: while your account is active, then 12 months.</li><li>Payment proofs: until your subscription is activated, then 12 months.</li><li>Message text: as part of the document it produced.</li></ul>
+<p>Invoices are stored with a cryptographic hash chain so that any alteration is detectable. That protects you as much as us: it is what lets an auditor establish a document has not been changed since it was issued.</p>
+<h2>Your rights</h2>
+<p>Under Law 09-08 you may ask us to:</p>
+<ul><li><strong>see</strong> what we hold about you</li><li><strong>correct</strong> anything wrong — you can also do this yourself with the <code>modifier</code> command</li><li><strong>delete</strong> your data, except invoices inside their legal retention period</li><li><strong>object</strong> to processing, which in practice means closing your account</li></ul>
+<p>Write to the contact address at the top of this page. We will respond within 30 days.</p>
+<p>You may also complain to the <strong>CNDP</strong> (Commission Nationale de contrôle de la protection des Données à caractère Personnel), which supervises data protection in Morocco.</p>
+<h2>Security</h2>
+<p>Access to the admin panel requires authentication. Portal links are signed, expire, and are bound to the device that requested them. Inbound WhatsApp messages are cryptographically verified as genuinely from Meta before being processed. The database is backed up on a schedule.</p>
+<p>No system is perfectly secure. If a breach affects your data, we will tell you.</p>
+<h2>Children</h2>
+<p>The Service is for registered businesses and is not directed at anyone under 18.</p>
+<h2>Changes</h2>
+<p>If this policy changes materially, we will say so on this page and update the date above.</p>
+<footer>Service de génération de devis et factures par WhatsApp pour les TPE marocaines.</footer>
+</div>
+</body>
+</html>
